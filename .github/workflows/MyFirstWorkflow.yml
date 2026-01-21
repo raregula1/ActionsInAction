@@ -19,5 +19,11 @@ jobs:
         run: |
             echo "The repository ${{ github.repository }} contains the following"
             tree
-      
+      literal_block: |
+          Text blocks use four spaces as indentation. The entire
+          block is assigned to the key 'literal_block' and keeps
+          line breaks and empty lines.
+  
+          The block continuous until the next YAML element with the same
+          indentation as the literal block.
 
